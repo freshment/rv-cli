@@ -27,14 +27,12 @@
     "webpack": "^4.44.0",
     "webpack-cli": "^4.2.0"
   },
-  "hooks": {
-    "hooks": {
-      "commit-msg": "./validate-commit-msg.js"
-    }
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "commit-msg": "./validate-commit-msg.js"
     }
   }
 }
