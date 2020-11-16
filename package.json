@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "webpack --config ./config/webpack.dev.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/freshment/rv-cli/issues"
   },
-  "homepage": "https://github.com/freshment/rv-cli#readme"
+  "homepage": "https://github.com/freshment/rv-cli#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.2.1",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {}
 }
