@@ -28,7 +28,9 @@
     "webpack-cli": "^4.2.0"
   },
   "hooks": {
-    "commit-msg": "./validate-commit-msg.js"
+    "hooks": {
+      "commit-msg": "./validate-commit-msg.js"
+    }
   },
   "config": {
     "commitizen": {
