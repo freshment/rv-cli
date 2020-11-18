@@ -32,14 +32,15 @@ Header由以下三个部分组成：
 - subject（必填）：用于对本次提交的简要说明，类似commit中的message。
 
 #### type
-type用以区分本次提交的类型，有以下7种选项：
+type用以区分本次提交的类型，常用的有以下8种选项：
 - feat：新功能（feature）
 - fix：修补bug
 - docs：文档（documentation）
-- style： 格式（不影响代码运行的变动）
+- style：格式（不影响代码运行的变动）
 - refactor：重构（即不是新增功能，也不是修改bug的代码变动）
 - test：增加测试
 - chore：构建过程或辅助工具的变动
+- perf：优化代码
 
 ## Commitizen辅助工具
 Commitizen是符合Commit Message规范的提交工具，用于简化提交流程。
