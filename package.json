@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:dev": "webpack --config ./config/webpack.dev.js"
+    "build:dev": "npm run clean && webpack --config ./config/webpack.dev.js",
+    "graphQL": "node ./server/graphQL.js",
+    "clean": "rimraf dist"
   },
   "repository": {
     "type": "git",
@@ -20,10 +22,13 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
     "babel-loader": "^8.2.1",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^4.3.0",
+    "rimraf": "^3.0.2",
     "validate-commit-msg": "^2.14.0",
     "webpack": "^4.44.0",
     "webpack-cli": "^4.2.0"

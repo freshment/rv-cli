@@ -22,22 +22,29 @@
 - UI
 - h5、web端差异兼容
 - vue、react差异兼容
+- 统一组件设计规范
 - 数据流方案
 - 规范化插件集成
   - eslint
   - stylelint
-- 构建脚本完善
 - dockerFile部署
 - 钉钉推送集成
 - 国际化
 - 权限控制
-- graphQL
+
 - 埋点与异常上报方案
 - 服务端渲染/页面静态化
 - 多项目解决方案
   - yarn workspace
   - monorepo
   - nx方案
+
+## 进行中
+- 规范化文档完善
+
 ## 已完成
 - git提交日志规范
+
+## 搁置
+- graphQL
 
