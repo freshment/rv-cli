@@ -130,7 +130,7 @@ const obj1 = {
 const name = 'Jon'
 const obj2 = {
   name,
-  getName(){
+  getName() {
     return this.name
   }
 }

@@ -26,7 +26,6 @@
 - 规范化插件集成
   - eslint
   - stylelint
-- 构建脚本完善
 - dockerFile部署
 - 钉钉推送集成
 - 国际化
@@ -38,6 +37,11 @@
   - yarn workspace
   - monorepo
   - nx方案
+
+## 进行中
+- 统一组件设计规范
+- 规范化文档完善
+
 ## 已完成
 - git提交日志规范
 
