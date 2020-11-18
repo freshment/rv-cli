@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "rv-cli": "bin/cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:dev": "npm run clean && webpack --config ./config/webpack.dev.js",
@@ -19,7 +22,10 @@
     "url": "https://github.com/freshment/rv-cli/issues"
   },
   "homepage": "https://github.com/freshment/rv-cli#readme",
-  "dependencies": {},
+  "dependencies": {
+    "cac": "^6.6.1",
+    "sao": "^1.7.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
