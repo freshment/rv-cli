@@ -28,5 +28,9 @@ cli
 ```
 
 ## 选项配置
-选项配置在`bin/commands/saofile.js`下，可为用户提供不同的选项用于生成模板代码。
+选项配置在`bin/commands/<commands>/saofile.js`下，可为用户提供不同的选项用于生成模板代码。
+其中`<commands>`为脚手架命令，例如`bin/commands/create/saofile.js`。
 
+## 模板开发
+模板统一放置在`template`目录下，目前仅有`base-template`，后续可基于此模板进行开发，
+并在通过脚手架创建时提供选项，让用户根据需求选择对应的模板。
