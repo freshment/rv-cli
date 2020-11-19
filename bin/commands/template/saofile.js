@@ -2,6 +2,14 @@ const {
   getTemplateChoice
 } = require('../helper')
 
+const path = require('path')
+
+const {
+  templateRoot
+} = require('../utils')
+
+const shell = require('shelljs')
+
 const opt = {
   prompts() {
     return [
@@ -35,7 +43,14 @@ const opt = {
       },
     ]
     return actions
-  } 
+  } ,
+  async completed() {
+    const userDir = path.join(process.cwd(), this.answers.name)
+    const templateDir = path.join(templateRoot, this.answers.name)
+    console.log(userDir)
+    console.log(templateDir)
+    shell.ln('-sf', templateDir , userDir)
+  }
 }
 
 module.exports = opt
