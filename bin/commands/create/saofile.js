@@ -39,7 +39,7 @@ const opt = {
       },
       {
         name: 'templateDir',
-        messsage: '选择脚手架模板',
+        message: '选择脚手架模板',
         type: 'list',
         pageSize: 15,
         choices: res,
