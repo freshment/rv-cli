@@ -4,7 +4,6 @@ const {
 
 const opt = {
   prompts() {
-  
     return [
       {
         name: 'name',

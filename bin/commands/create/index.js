@@ -7,10 +7,7 @@ module.exports = (projectName) => {
   const outDir = path.resolve(process.cwd(), projectName)
   sao({
     generator,
-    outDir,
-    cliOptions: {
-      name: projectName
-    }
+    outDir
   }).run()
     .catch(err => {
       console.trace(err)
