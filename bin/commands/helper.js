@@ -10,9 +10,11 @@ const {
   applySpec
 } = require('./lang')
 
-const getTemplateChoice = () => getFileList(templateRoot).map(applySpec({
+const getChoice = (dir) => getFileList(dir).map(applySpec({
   name: map,
-  value: getFilePath(templateRoot),
+  value: getFilePath(dir),
 }))
+
+const getTemplateChoice = getChoice(templateRoot)
 
 exports.getTemplateChoice = getTemplateChoice
