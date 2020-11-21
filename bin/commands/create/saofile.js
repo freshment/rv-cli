@@ -1,6 +1,10 @@
 const {
-  getTemplateChoice
+  getChoice
 } = require('../helper')
+
+const {
+  templateRoot
+} = require('../constant')
 
 const opt = {
   prompts() {
@@ -21,7 +25,7 @@ const opt = {
         message: '选择脚手架模板',
         type: 'list',
         pageSize: 15,
-        choices: getTemplateChoice(),
+        choices: getChoice(templateRoot),
         default: 'base-template'
       }
     ]

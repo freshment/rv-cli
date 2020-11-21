@@ -1,12 +1,12 @@
 const {
-  getTemplateChoice
+  getChoice
 } = require('../helper')
 
 const path = require('path')
 
 const {
   templateRoot
-} = require('../utils')
+} = require('../constant')
 
 const shell = require('shelljs')
 
@@ -28,7 +28,7 @@ const opt = {
         message: '选择脚手架模板',
         type: 'list',
         pageSize: 15,
-        choices: getTemplateChoice(),
+        choices: getChoice(templateRoot),
         default: 'base-template'
       }
     ]
@@ -47,8 +47,6 @@ const opt = {
   async completed() {
     const userDir = path.join(process.cwd(), this.answers.name)
     const templateDir = path.join(templateRoot, this.answers.name)
-    console.log(userDir)
-    console.log(templateDir)
     shell.ln('-sf', templateDir , userDir)
   }
 }
