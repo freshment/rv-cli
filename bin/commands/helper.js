@@ -14,4 +14,4 @@ const getChoice = (dir) => getFileList(dir).map(applySpec({
   value: getFilePath(dir),
 }))
 
-exports.getTemplateChoice = getChoice
+exports.getChoice = getChoice
