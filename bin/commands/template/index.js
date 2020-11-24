@@ -1,17 +1,18 @@
 
+
+
 const sao = require('sao')
 const path = require('path')
-
+const {
+  templateRoot
+} = require('../utils')
 
 module.exports = (projectName) => {
   const generator = path.resolve(__dirname)
-  const outDir = path.resolve(process.cwd(), projectName)
+  const outDir = path.resolve(templateRoot, projectName)
   sao({
     generator,
-    outDir,
-    cliOptions: {
-      name: projectName
-    }
+    outDir
   }).run()
     .catch(err => {
       console.trace(err)
