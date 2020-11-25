@@ -7,6 +7,7 @@
     "rv-cli": "bin/cli.js"
   },
   "scripts": {
+    "dev": "npm run clean && webpack-dev-server --config ./config/webpack.local.js --open",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:dev": "npm run clean && webpack --config ./config/webpack.dev.js",
     "graphQL": "node ./server/graphQL.js",
@@ -32,13 +33,16 @@
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/plugin-transform-runtime": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
+    "@babel/runtime": "^7.12.5",
     "babel-loader": "^8.2.1",
     "cz-conventional-changelog": "^3.3.0",
+    "html-webpack-plugin": "^4.5.0",
     "husky": "^4.3.0",
     "rimraf": "^3.0.2",
     "validate-commit-msg": "^2.14.0",
     "webpack": "^4.44.0",
-    "webpack-cli": "^4.2.0"
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
   },
   "husky": {
     "hooks": {
