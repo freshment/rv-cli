@@ -24,19 +24,9 @@ module.exports = {
         use: [
           {
             loader: 'babel-loader',
-            // options: require(path.resolve(__dirname, '../.babelrc'))
-            options: {
-              presets: [
-                require('@babel/preset-env')
-              ],
-              plugins: [
-                require('@babel/plugin-transform-runtime'),
-                require('@babel/plugin-proposal-class-properties')
-              ]
-            }
           }
-        ]
-        // include: [resolve('./src')]
+        ],
+        include: [resolve('./src')]
       }
     ]
   },
