@@ -4,11 +4,13 @@
   "description": "<%= description %>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rv-cli dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "rv-cli": "git+https://github.com/freshment/rv-cli.git"
   }
 }
