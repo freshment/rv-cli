@@ -1,10 +1,10 @@
+// 该 webpack  是适用于 tempalte 项目的webpack配置
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
 const resolve = function (src) {
   return path.resolve(__dirname, '../', src)
 }
-
 
 module.exports = {
   mode: 'development',
