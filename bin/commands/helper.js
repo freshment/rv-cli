@@ -5,12 +5,12 @@ const {
 } = require('./utils')
 
 const {
-  map,
+  identity,
   applySpec
 } = require('../../lib/lang')
 
 const getChoice = (dir) => getFileList(dir).map(applySpec({
-  name: map,
+  name: identity,
   value: getFilePath(dir),
 }))
 
