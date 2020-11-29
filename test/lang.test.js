@@ -3,7 +3,8 @@ const {
 	map,
 	prop,
 	applySpec,
-	identity
+	identity,
+	compose
 } = require('../lib/lang')
 
 const {
@@ -33,6 +34,7 @@ it('prop', () => {
 	}
 	const nameProp = prop('name')
 	expect(nameProp(obj)).toBe('lgw')
+
 })
 
 it('applySpec', () => {
@@ -66,3 +68,24 @@ it('applySpec', () => {
 
 })
 
+
+it('compose', () => {
+
+	const p = {
+		a: {
+			b: {
+				c: {
+					d: 'lgw'
+				}
+			}
+		}
+	}
+	const getAbc = compose(
+		prop('d'),
+		prop('c'),
+		prop('b'),
+		prop('a')
+	)
+
+	compose(console.log, getAbc)(p)
+})

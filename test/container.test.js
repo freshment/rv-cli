@@ -11,6 +11,7 @@ it('Container', () => {
 		.map(x => x.concat( ' zh'))
 	const output = Container.of('lgw and zh')
 	expect(input).toEqual(output)
+
 })
 
 it('Maybe', () => {
