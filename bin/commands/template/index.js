@@ -5,7 +5,7 @@ const sao = require('sao')
 const path = require('path')
 const {
   templateRoot
-} = require('../utils')
+} = require('../constant')
 
 module.exports = (projectName) => {
   const generator = path.resolve(__dirname)

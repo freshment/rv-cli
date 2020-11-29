@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "npm run clean && webpack-dev-server --config ./config/webpack.local.js --open",
     "local-dev": "npm run clean && webpack-dev-server --config ./config/webpack.local-dev.js --open",
-    "test": "echo \"Error: no test specified\"",
+		"test": "jest",
     "build:dev": "npm run clean && webpack --config ./config/webpack.dev.js",
     "graphQL": "node ./server/graphQL.js",
     "clean": "rimraf dist"
@@ -46,7 +46,8 @@
     "sass": "^1.29.0",
     "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0",
-    "url-loader": "^4.1.1",
+		"url-loader": "^4.1.1",
+    "jest": "^26.6.3",
     "webpack": "^4.2.0",
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.11.0"
