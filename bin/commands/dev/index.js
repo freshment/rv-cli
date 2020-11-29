@@ -9,6 +9,9 @@ function rootPath (src) {
 }
 
 module.exports = () => {
+	const tempaltePath = path.resolve(process.cwd(), './config/webpack.dev.js')
+	const tempalteConfig = require(tempaltePath)
+	console.log('tempalteConfig:', tempalteConfig )
   const compiler = webpack(webpackConfig)
   const devServerOptions = Object.assign({}, webpackConfig.devServer, {
     open: true,
